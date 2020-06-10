@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build WAR file') {
             steps {
-                mvn('clean package', 'pom.xml')
+                maven('clean package', 'pom.xml')
             }
             post {
                 success {
